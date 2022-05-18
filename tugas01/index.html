@@ -21,6 +21,11 @@
 				height: 100%;
 			}
 			
+			body {
+				display: flex;
+				flex-direction: column;
+			}
+			
 			div.container {
 				max-width: 1400px;
 				width: 90%;
@@ -33,9 +38,21 @@
 				background-color: #55f;
 				color: #fff;
 			}
-			
+			header {
+				margin-bottom: auto;
+			}
 			header div.container {
 				padding: 10px 0;
+			}
+			
+			footer {
+				margin-top: auto;
+			}
+			footer div.container {
+				padding: 5px 0;
+			}
+			footer div.container p {
+				text-align: center;
 			}
 			
 		</style>
@@ -47,25 +64,29 @@
 			</div>
 		</header>
 		<main>
-			<nav>
-				<ul>
-					<li><a href="#" target="_blank">My Youtube</a></li>
-					<li><a href="#" target="_blank">My Facebook</a></li>
-					<li><a href="#" target="_blank">My LinkedIn</a></li>
-					<li><a href="#" target="_blank">My Instagram</a></li>
-					<li><a href="#" target="_blank">My Tiktok</a></li>
-				</ul>
-			</nav>
-			<article>
-				<h2>Welcome to My Site</h2>
-				<p>Here's a picture of mine...</p>
-				<img src="https://avatars.githubusercontent.com/u/56812192?s=240&v=4" alt="Aldy's Picture">
-				<p><i>Enjoy some music!</i></p>
-				<iframe width="510" height="265" src="https://www.youtube.com/embed/1BOfoSc7nBM" title="YouTube video player" frameborder="0"></iframe>
-			</article>
+			<div class="container">
+				<nav>
+					<ul>
+						<li><a href="#" target="_blank">My Youtube</a></li>
+						<li><a href="#" target="_blank">My Facebook</a></li>
+						<li><a href="#" target="_blank">My LinkedIn</a></li>
+						<li><a href="#" target="_blank">My Instagram</a></li>
+						<li><a href="#" target="_blank">My Tiktok</a></li>
+					</ul>
+				</nav>
+				<article>
+					<h2>Welcome to My Site</h2>
+					<p>Here's a picture of mine...</p>
+					<img src="https://avatars.githubusercontent.com/u/56812192?s=240&v=4" alt="Aldy's Picture">
+					<p><i>Enjoy some music!</i></p>
+					<iframe width="510" height="265" src="https://www.youtube.com/embed/1BOfoSc7nBM" title="YouTube video player" frameborder="0"></iframe>
+				</article>
+			</div>
 		</main>
 		<footer>
-			<p>&copy;2022 by AAKEN Developer a.k.a Aldy</p>
+			<div class="container">
+				<p>&copy;2022 by AAKEN Developer a.k.a Aldy</p>
+			</div>
 		</footer>
 	</body>
 </html>
