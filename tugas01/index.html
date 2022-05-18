@@ -51,8 +51,8 @@
 			main div.container nav {
 				margin-right: auto;
 				flex: 0.5;
-				padding-top: 50px;
-				padding-right: 50px;
+				padding-top: 100px;
+				padding-right: 100px;
 			}
 			main div.container nav ul {
 				list-style: none;
@@ -78,9 +78,14 @@
 				text-align: center;
 			}
 			main div.container article {
+				display: flex;
 				flex: 1;
 			}
-			main div.container article img {
+			main div.container article div.left-side,
+			main div.container article div.right-side {
+				flex: 1;
+			}
+			main div.container article div.left-side img {
 				width: 180px;
 				border-radius: 50%;
 				border: 5px solid #55f;
@@ -114,11 +119,15 @@
 					</ul>
 				</nav>
 				<article>
-					<h2>Welcome to My Site</h2>
-					<p>Here's a picture of mine...</p>
-					<img src="https://avatars.githubusercontent.com/u/56812192?s=240&v=4" alt="Aldy's Picture">
-					<p><i>Enjoy some music!</i></p>
-					<iframe width="410" height="165" src="https://www.youtube.com/embed/1BOfoSc7nBM" title="YouTube video player" frameborder="0"></iframe>
+					<div class="left-side">
+						<h2>Welcome to My Site</h2>
+						<p>Here's a picture of mine...</p>
+						<img src="https://avatars.githubusercontent.com/u/56812192?s=240&v=4" alt="Aldy's Picture">
+					</div>
+					<div class="right-side">
+						<p><i>Enjoy some music!</i></p>
+						<iframe width="410" height="165" src="https://www.youtube.com/embed/1BOfoSc7nBM" title="YouTube video player" frameborder="0"></iframe>
+					</div>
 				</article>
 			</div>
 		</main>
