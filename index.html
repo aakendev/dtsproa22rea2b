@@ -31,12 +31,177 @@
         justify-content: center;
         align-items: center;
       }
+
+      div.container {
+        max-width: 1400px;
+        width: 90vw;
+        margin: 0 auto;
+      }
+
+      header {
+        margin-bottom: auto;
+        background-color: #55f;
+        width: 100vw;
+      }
+      header div.container {
+        display: flex;
+        align-items: center;
+        padding: 5px 0;
+      }
+      header div.container div.top-logo p {
+        color: #fff;
+        line-height: 15px;
+      }
+      header div.container div.top-logo p span {
+        background-color: #fff;
+        color: #000;
+        font-size: 24px;
+        border-radius: 5px;
+        padding: 2.5px;
+        font-weight: 500;
+        margin-right: 5px;
+      }
+      header div.container div.top-img {
+        position: relative;
+        margin-left: auto;
+      }
+      header div.container div.top-img img {
+        border-radius: 50%;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        border: 1px solid transparent;
+      }
+      header div.container div.top-img img:hover {
+        cursor: pointer;
+        border: 1px solid #bbb;
+      }
+      header div.container div.top-img img:hover ~ div.top-hover-info {
+        display: block;
+      }
+      header div.container div.top-img div.top-hover-info {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #f55;
+        width: 200px;
+        font-size: 12px;
+        padding: 10px;
+      }
+      header div.container div.top-img div.top-hover-info::before {
+        position: absolute;
+        top: -10px;
+        right: 13px;
+        width: 20px;
+        height: 20px;
+        content: ' ';
+        background-color: #f55;
+        transform: rotate(45deg);
+      }
+
+      header div.container div.top-img div.top-hover-info ul {
+        list-style: none;
+      }
+      header div.container div.top-img div.top-hover-info ul li {
+        width: 100%;
+        display: flex;
+      }
+      header div.container div.top-img div.top-hover-info ul li span.side-left {
+        font-weight: 500;
+      }
+      header
+        div.container
+        div.top-img
+        div.top-hover-info
+        ul
+        li
+        span.side-right {
+        margin-left: auto;
+        font-weight: 700;
+      }
+
+      main div.container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      main div.container a {
+        width: 90vw;
+        display: block;
+        background-color: #555;
+        color: #fff;
+        border-radius: 5px;
+        text-align: center;
+        padding: 10px 0;
+        margin: 10px 0;
+        text-decoration: none;
+      }
+      main div.container a:hover {
+        font-weight: 700;
+        background-color: #999;
+        color: #555;
+      }
+
+      footer {
+        margin-top: auto;
+        background-color: #55f;
+        width: 100vw;
+      }
+      footer div.container {
+        padding: 5px 0;
+      }
+      footer div.container p {
+        text-align: center;
+        color: #ff5;
+      }
     </style>
   </head>
   <body>
-    <a href="./tugas01/index.html" target="_blank">Tugas 01 - Challenge HTML</a>
-    <a href="./tugas02/index.html" target="_blank"
-      >Tugas 02 - Challenge HTML CSS</a
-    >
+    <header>
+      <div class="container">
+        <div class="top-logo">
+          <p><span>A</span>AKEN Developer</p>
+        </div>
+        <div class="top-img">
+          <img
+            src="https://avatars.githubusercontent.com/u/56812192?s=40&v=4"
+            alt="Aldy Logo"
+          />
+          <div class="top-hover-info">
+            <ul>
+              <li>
+                <span class="side-left">Name :</span
+                ><span class="side-right">Aldy Rizky Putra</span>
+              </li>
+              <li>
+                <span class="side-left">Age :</span
+                ><span class="side-right">30 Years Old</span>
+              </li>
+              <li>
+                <span class="side-left">Hobby :</span
+                ><span class="side-right">Games & Coding</span>
+              </li>
+              <li>
+                <span class="side-left">DTS Reg ID :</span
+                ><span class="side-right">152235865101-601</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <a href="./tugas01/index.html">Tugas 01 - Challenge HTML</a>
+        <a href="./tugas02/index.html">Tugas 02 - Challenge HTML CSS</a>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <p>&copy;2022 by AAKEN Developer a.k.a Aldy</p>
+      </div>
+    </footer>
   </body>
 </html>
