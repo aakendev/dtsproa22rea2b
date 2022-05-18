@@ -1,180 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="theme-color" content="#ff5">
-		<link rel="icon" href="https://avatars.githubusercontent.com/u/56812192?s=40&v=4">
-		<title>Tugas 01 - Challenge HTML - Aldy Rizky Putra</title>
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-			
-			* {
-				box-sizing: border-box;
-				font-family: 'Poppins', sans-serif;
-				margin: 0;
-				padding: 0;
-			}
-			
-			@keyframes img-rotate {
-				0% {
-					transform: rotate(0deg);
-				}
-				100% {
-					transform: rotate(360deg);
-				}
-			}
-			
-			html, body {
-				width: 100%;
-				height: 100%;
-			}
-			
-			body {
-				display: flex;
-				flex-direction: column;
-			}
-			
-			div.container {
-				max-width: 1400px;
-				width: 90%;
-				margin: 0 auto;
-			}
-			
-			header,
-			footer {
-				width: 100%;
-				background-color: #55f;
-				color: #fff;
-			}
-			header div.container {
-				padding: 10px 0;
-			}
-			
-			main {
-				flex: 1;
-			}
-			main div.container {
-				display: flex;
-			}
-			main div.container nav {
-				margin-right: auto;
-				flex: 0.5;
-				padding-top: 80px;
-				padding-right: 100px;
-			}
-			main div.container nav ul {
-				list-style: none;
-			}
-			main div.container nav ul li {
-				margin: 10px 0;
-				background-color: #f00;
-				border-radius: 5px;
-				padding: 10px 0;
-			}
-			main div.container nav ul li:hover {
-				background-color: #f55;
-			}
-			main div.container nav ul li:hover a {
-				font-weight: 900;
-				transform: scale(1.5);
-			}
-			main div.container nav ul li a {
-				position: relative;
-				display: block;
-				text-decoration: none;
-				color: #fff;
-				text-align: center;
-			}
-			main div.container article {
-				display: flex;
-				flex-direction: column;
-				flex: 1;
-			}
-			main div.container article h2 {
-				text-align: center;
-				padding: 10px 0;
-				margin-bottom: 20px;
-			}
-			main div.container article div.side {
-				display: flex;
-			}
-			main div.container article div.side div.left-side,
-			main div.container article div.side div.right-side {
-				flex: 1;
-				padding: 0 10px;
-			}
-			main div.container article div.side div.left-side p {
-				text-align: center;
-				margin-bottom: 10px;
-			}
-			main div.container article div.side div.left-side img {
-				display: block;
-				width: 180px;
-				border-radius: 50%;
-				border: 5px solid #55f;
-				margin: 0 auto;
-			}
-			main div.container article div.side div.left-side img:hover {
-				animation-name: img-rotate;
-				animation-duration: 5s;
-				animation-iteration-count: infinite;
-				animation-fill-mode: forwards;
-			}
-			main div.container article div.side div.right-side p {
-				text-align: center;
-				margin-bottom: 10px;
-			}
-			main div.container article div.side div.right-side iframe {
-				display: block;
-				width: 400px;
-				height: 250px;
-				margin: 0 auto;
-			}
-			
-			footer div.container {
-				padding: 5px 0;
-			}
-			footer div.container p {
-				text-align: center;
-			}
-			
-		</style>
-	</head>
-	<body>
-		<header>
-			<div class="container">
-				<h1>Aldy's Page</h1>
-			</div>
-		</header>
-		<main>
-			<div class="container">
-				<nav>
-					<ul>
-						<li><a href="https://www.youtube.com/channel/UCFQ3DxqjDRnJu6Krkf8iPdQ" target="_blank">My Youtube</a></li>
-						<li><a href="https://www.github.com/aakendev" target="_blank">My GitHub</a></li>
-						<li><a href="https://www.linkedin.com/in/aldy-rizky-putra-40b02993" target="_blank">My LinkedIn</a></li>
-					</ul>
-				</nav>
-				<article>
-					<h2>Welcome to My Site</h2>
-					<div class="side">
-						<div class="left-side">
-							<p>Do you want to know me? This is me... Hover to my picture to see i am rotating... haha...</p>
-							<img src="https://avatars.githubusercontent.com/u/56812192?s=240&v=4" alt="Aldy's Picture">
-						</div>
-						<div class="right-side">
-							<p><i>I like anime music!</i></p>
-							<iframe src="https://www.youtube.com/embed/1BOfoSc7nBM" title="YouTube video player" frameborder="0"></iframe>
-						</div>
-					</div>
-				</article>
-			</div>
-		</main>
-		<footer>
-			<div class="container">
-				<p>&copy;2022 by AAKEN Developer a.k.a Aldy</p>
-			</div>
-		</footer>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ff5" />
+    <link
+      rel="icon"
+      href="https://avatars.githubusercontent.com/u/56812192?s=40&v=4"
+    />
+    <title>Tugas 01 - Challenge HTML - Aldy Rizky Putra</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+      * {
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      @keyframes img-rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+
+      div.container {
+        max-width: 1400px;
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      header,
+      footer {
+        width: 100%;
+        background-color: #55f;
+        color: #fff;
+      }
+      header div.container {
+        padding: 10px 0;
+      }
+
+      main {
+        flex: 1;
+      }
+      main div.container {
+        display: flex;
+      }
+      main div.container nav {
+        margin-right: auto;
+        flex: 0.5;
+        padding-top: 80px;
+        padding-right: 100px;
+      }
+      main div.container nav ul {
+        list-style: none;
+      }
+      main div.container nav ul li {
+        margin: 10px 0;
+        background-color: #f00;
+        border-radius: 5px;
+        padding: 10px 0;
+      }
+      main div.container nav ul li:hover {
+        background-color: #f55;
+      }
+      main div.container nav ul li:hover a {
+        font-weight: 900;
+        transform: scale(1.5);
+      }
+      main div.container nav ul li a {
+        position: relative;
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+      }
+      main div.container article {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+      main div.container article h2 {
+        text-align: center;
+        padding: 10px 0;
+        margin-bottom: 20px;
+      }
+      main div.container article div.side {
+        display: flex;
+      }
+      main div.container article div.side div.left-side,
+      main div.container article div.side div.right-side {
+        flex: 1;
+        padding: 0 10px;
+      }
+      main div.container article div.side div.left-side p {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      main div.container article div.side div.left-side img {
+        display: block;
+        width: 180px;
+        border-radius: 50%;
+        border: 5px solid #55f;
+        margin: 0 auto;
+      }
+      main div.container article div.side div.left-side img:hover {
+        animation-name: img-rotate;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+      }
+      main div.container article div.side div.right-side p {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      main div.container article div.side div.right-side iframe {
+        display: block;
+        width: 400px;
+        height: 250px;
+        margin: 0 auto;
+      }
+
+      footer div.container {
+        padding: 5px 0;
+      }
+      footer div.container p {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Aldy's Page</h1>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <nav>
+          <ul>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCFQ3DxqjDRnJu6Krkf8iPdQ"
+                target="_blank"
+                >My Youtube</a
+              >
+            </li>
+            <li>
+              <a href="https://www.github.com/aakendev" target="_blank"
+                >My GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/aldy-rizky-putra-40b02993"
+                target="_blank"
+                >My LinkedIn</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <article>
+          <h2>Welcome to My Site</h2>
+          <div class="side">
+            <div class="left-side">
+              <p>
+                Do you want to know me? This is me... Hover to my picture to see
+                i am rotating... haha...
+              </p>
+              <img
+                src="https://avatars.githubusercontent.com/u/56812192?s=240&v=4"
+                alt="Aldy's Picture"
+              />
+            </div>
+            <div class="right-side">
+              <p><i>I like anime music!</i></p>
+              <iframe
+                src="https://www.youtube.com/embed/1BOfoSc7nBM"
+                title="YouTube video player"
+                frameborder="0"
+              ></iframe>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <p>&copy;2022 by AAKEN Developer a.k.a Aldy</p>
+      </div>
+    </footer>
+  </body>
 </html>
