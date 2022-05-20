@@ -7,6 +7,30 @@
     padding: 0;
 }
 
+@keyframes title-rotate {
+    from {
+        top: 95px;
+        left: -29px;
+        transform: rotate(90deg);
+    }
+    to {
+        top: 18px;
+        left: 50px;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes title-slide {
+    from {
+        top: 18px;
+        left: 60px;
+    }
+    to {
+        top: 18px;
+        left: 65px;
+    }
+}
+
 html,
 body {
     width: 100vw;
@@ -20,7 +44,69 @@ div.container {
 }
 
 header {
-    background-color: red;
+    padding-bottom: 20px;
+}
+header div.container div.header-title {
+    position: relative;
+    padding: 30px 20px;
+}
+header div.container div.header-title span.title-left {
+    position: absolute;
+    top: 10px;
+    background-color: #55f;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px 10px;
+    margin-right: 5px;
+    font-weight: 900;
+    font-size: 20px;
+    cursor: pointer;
+}
+header div.container div.header-title span.title-middle {
+    position: absolute;
+    top: 18px;
+    left: 60px;
+    animation-name: title-slide;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    font-weight: 700;
+}
+header div.container div.header-title:hover span.title-right {
+    display: block;
+    animation-name: title-rotate;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+}
+header div.container div.header-title:hover span.title-middle {
+    display: none;
+}
+header div.container div.header-title span.title-right {
+    display: none;
+    position: absolute;
+    top: 95px;
+    left: -29px;
+    letter-spacing: 2px;
+    background-color: #55f;
+    color: #fff;
+    border-radius: 0px 10px 10px 0px;
+    transform: rotate(90deg);
+}
+header div.container div.header-logo {
+    display: flex;
+    border-radius: 10px;
+}
+header div.container div.header-logo img {
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    width: 200px;
+}
+header div.container div.header-details {
+    width: 100%;
+    background-color: green;
+    text-align: center;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
 }
 
 main {
