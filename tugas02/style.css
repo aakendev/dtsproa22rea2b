@@ -1,118 +1,269 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 @keyframes title-rotate {
-    from {
-        top: 95px;
-        left: -29px;
-        transform: rotate(90deg);
-    }
-    to {
-        top: 18px;
-        left: 50px;
-        transform: rotate(0deg);
-    }
+  from {
+    top: 95px;
+    left: -29px;
+    transform: rotate(90deg);
+  }
+  to {
+    top: 18px;
+    left: 50px;
+    transform: rotate(0deg);
+  }
 }
 
 @keyframes title-slide {
-    from {
-        top: 18px;
-        left: 60px;
-    }
-    to {
-        top: 18px;
-        left: 65px;
-    }
+  from {
+    top: 18px;
+    left: 60px;
+  }
+  to {
+    top: 18px;
+    left: 65px;
+  }
+}
+
+@keyframes title-blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 html,
 body {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 
 div.container {
-    max-width: 1400px;
-    width: 90vw;
-    margin: 0 auto;
+  max-width: 1400px;
+  width: 90vw;
+  margin: 0 auto;
 }
 
 header {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 header div.container div.header-title {
-    position: relative;
-    padding: 30px 20px;
+  position: relative;
+  padding: 30px 20px;
 }
 header div.container div.header-title span.title-left {
-    position: absolute;
-    top: 10px;
-    background-color: #55f;
-    color: #fff;
-    border-radius: 50%;
-    padding: 5px 10px;
-    margin-right: 5px;
-    font-weight: 900;
-    font-size: 20px;
-    cursor: pointer;
+  position: absolute;
+  top: 10px;
+  background-color: #55f;
+  color: #fff;
+  border-radius: 50%;
+  padding: 5px 10px;
+  margin-right: 5px;
+  font-weight: 900;
+  font-size: 20px;
+  cursor: pointer;
 }
 header div.container div.header-title span.title-middle {
-    position: absolute;
-    top: 18px;
-    left: 60px;
-    animation-name: title-slide;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    font-weight: 700;
+  position: absolute;
+  top: 18px;
+  left: 60px;
+  animation-name: title-slide;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  font-weight: 700;
 }
 header div.container div.header-title:hover span.title-right {
-    display: block;
-    animation-name: title-rotate;
-    animation-duration: 2.5s;
-    animation-fill-mode: forwards;
+  display: block;
+  animation-name: title-rotate;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
 }
 header div.container div.header-title:hover span.title-middle {
-    display: none;
+  display: none;
 }
 header div.container div.header-title span.title-right {
-    display: none;
-    position: absolute;
-    top: 95px;
-    left: -29px;
-    letter-spacing: 2px;
-    background-color: #55f;
-    color: #fff;
-    border-radius: 0px 10px 10px 0px;
-    transform: rotate(90deg);
+  display: none;
+  position: absolute;
+  top: 95px;
+  left: -29px;
+  letter-spacing: 2px;
+  background-color: #55f;
+  color: #fff;
+  border-radius: 0px 10px 10px 0px;
+  transform: rotate(90deg);
 }
 header div.container div.header-logo {
-    display: flex;
-    border-radius: 10px;
+  display: flex;
+  border-radius: 10px;
 }
 header div.container div.header-logo img {
-    border-top-left-radius: inherit;
-    border-bottom-left-radius: inherit;
-    width: 200px;
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+  width: 200px;
+  box-shadow: 5px 5px 5px #55f;
 }
 header div.container div.header-details {
-    width: 100%;
-    background-color: green;
-    text-align: center;
-    border-top-right-radius: inherit;
-    border-bottom-right-radius: inherit;
+  width: 400px;
+  border: 2px solid #55f;
+  border-left: none;
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+  padding-top: 10px;
+  color: #55f;
+  box-shadow: 5px 5px 5px;
+}
+header div.container div.header-details p span.top-blink {
+  animation-name: title-blink;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  margin-left: 20px;
+  color: inherit;
+}
+header div.container div.header-details p span.top-content {
+  font-weight: 500;
+  margin-left: 30px;
+  color: inherit;
+}
+header div.container div.header-details div.header-icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+header div.container div.header-details div.header-icon a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+header div.container div.header-details div.header-icon a:hover svg {
+  transform: scale(1.5);
+}
+header
+  div.container
+  div.header-details
+  div.header-icon
+  a:hover
+  span.icon-details {
+  display: block;
+}
+header div.container div.header-details div.header-icon a span.icon-details {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: -10px;
+  font-size: 13px;
 }
 
 main {
-    background-color: blue;
+  background-color: blue;
+  margin-top: 60px;
+}
+main div.container {
+  position: relative;
+}
+main div.container a {
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+main div.container a.tab-title-about {
+  top: -45px;
+  background-color: #000;
+}
+main div.container a.tab-title-experience {
+  top: -45px;
+  left: 110px;
+  background-color: #000;
+}
+main div.container a.tab-title-education {
+  top: -45px;
+  left: 230px;
+  background-color: #000;
+}
+main div.container a.tab-title-organization {
+  top: -45px;
+  left: 350px;
+  background-color: #000;
+}
+main div.container a.tab-title-portfolio {
+  top: -45px;
+  left: 500px;
+  background-color: #000;
+}
+main div.container a.tab-title-contact {
+  top: -45px;
+  left: 615px;
+  background-color: #000;
+}
+main div.container a:hover {
+  background-color: #55f;
+  color: #fff;
+}
+main div.container a.tab-title-about:hover ~ article.about,
+main div.container a.tab-title-experience:hover ~ article.experience,
+main div.container a.tab-title-education:hover ~ article.education,
+main div.container a.tab-title-organization:hover ~ article.organization,
+main div.container a.tab-title-portfolio:hover ~ article.portfolio,
+main div.container a.tab-title-contact:hover ~ article.contact,
+main div.container article:hover {
+  z-index: 999;
+  height: 200px;
+}
+main div.container article {
+  position: absolute;
+  height: 0px;
+  max-width: 741px;
+  overflow: hidden;
+  transition: height 2.5s ease;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 5px 5px 5px #999;
+}
+main div.container article:hover {
+}
+main div.container article.about {
+  top: 0px;
+  background-color: red;
+}
+main div.container article.experience {
+  top: 0px;
+  background-color: yellow;
+}
+main div.container article.education {
+  top: 0px;
+  background-color: brown;
+}
+main div.container article.organization {
+  top: 0px;
+  background-color: pink;
+}
+main div.container article.portfolio {
+  top: 0px;
+  background-color: orange;
+}
+main div.container article.contact {
+  top: 0px;
+  background-color: lightblue;
 }
 
 footer {
-    background-color: green;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: green;
 }
