@@ -40,6 +40,15 @@
   }
 }
 
+@keyframes marquee {
+  from {
+    transform: translateX(1500px);
+  }
+  to {
+    transform: translateX(-1500px);
+  }
+}
+
 html,
 body {
   width: 100vw;
@@ -210,7 +219,7 @@ main div.container a.tab-title-contact {
   left: 615px;
   background-color: #000;
 }
-main div.container a:hover {
+main div.container > a:hover {
   background-color: #55f;
   color: #fff;
 }
@@ -227,43 +236,105 @@ main div.container article:hover {
 main div.container article {
   position: absolute;
   height: 0px;
-  max-width: 741px;
+  width: 741px;
   overflow: hidden;
   transition: height 2.5s ease;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   box-shadow: 5px 5px 5px #999;
+  background-color: #fff;
+  border: 2px solid #55f;
 }
-main div.container article:hover {
+main div.container article div.details {
+  margin: 20px 30px;
+  text-align: justify;
+  overflow: auto;
+  max-height: 200px;
+  padding-right: 10px;
+  padding-bottom: 40px;
 }
 main div.container article.about {
   top: 0px;
-  background-color: red;
 }
 main div.container article.experience {
   top: 0px;
-  background-color: yellow;
 }
 main div.container article.education {
   top: 0px;
-  background-color: brown;
 }
 main div.container article.organization {
   top: 0px;
-  background-color: pink;
 }
 main div.container article.portfolio {
   top: 0px;
-  background-color: orange;
 }
 main div.container article.contact {
   top: 0px;
-  background-color: lightblue;
+}
+main div.container article.portfolio div.details {
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+}
+main div.container article.portfolio div.details a.link-github {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+main div.container article.portfolio div.details a.link-github:hover,
+main div.container article.portfolio div.details a.link-github:hover svg {
+  color: #55f;
+}
+main div.container article.contact div.details form div.form-control {
+  display: flex;
+  width: 500px;
+  margin-bottom: 20px;
+}
+main div.container article.contact div.details form div.form-control label {
+  flex: 0.5;
+  font-weight: 600;
+}
+main div.container article.contact div.details form div.form-control input,
+main div.container article.contact div.details form div.form-control select,
+main div.container article.contact div.details form div.form-control textarea {
+  flex: 1;
+  padding: 5px 10px;
+}
+main div.container article.contact div.details form button {
+  position: relative;
+  padding: 5px 10px;
+  font-weight: 600;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px;
+}
+main div.container article.contact div.details form button:hover {
+  background-color: #55f;
+  border: 2px solid #000;
+}
+main div.container article.contact div.details form button:active {
+  top: 5px;
+  box-shadow: none;
 }
 
 footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: green;
+  background-color: #55f;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 10px;
+}
+footer p {
+  animation-name: marquee;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+footer svg {
+  position: relative;
+  top: 10px;
 }
