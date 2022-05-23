@@ -1,0 +1,414 @@
+@media screen and (max-width: 425px) {
+  div.container {
+    width: 80vw;
+  }
+  header div.container div.header-details {
+    border: 2px solid;
+    box-shadow: 2px 2px 2px #55f;
+  }
+  header div.container div.header-details p {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+  }
+  header div.container div.header-logo img {
+    border: 2px solid #55f;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    width: 100px;
+    height: 100px;
+    box-shadow: 2px 2px 2px #55f;
+  }
+  header div.container div.header-details div.header-icon {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+  header div.container div.header-details div.header-icon a:hover svg {
+    transform: scale(1.25);
+  }
+  header div.container div.header-details div.header-icon a span.icon-details {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    font-size: 13px;
+    width: 180px;
+  }
+
+  main div.container a {
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 12px;
+    min-width: 100px;
+  }
+  main div.container a.tab-title-about {
+    top: -45px;
+    background-color: #000;
+  }
+  main div.container a.tab-title-experience {
+    top: -14px;
+    left: 0px;
+    background-color: #000;
+  }
+  main div.container a.tab-title-education {
+    top: 16px;
+    left: 0px;
+    background-color: #000;
+  }
+  main div.container a.tab-title-organization {
+    top: 46px;
+    left: 0px;
+    background-color: #000;
+  }
+  main div.container a.tab-title-portfolio {
+    top: 76px;
+    left: 0px;
+    background-color: #000;
+  }
+  main div.container a.tab-title-contact {
+    top: 106px;
+    left: 0px;
+    background-color: #000;
+  }
+  main div.container > a:hover {
+    background-color: #55f;
+    color: #fff;
+  }
+  main div.container a.tab-title-about:hover ~ article.about,
+  main div.container a.tab-title-experience:hover ~ article.experience,
+  main div.container a.tab-title-education:hover ~ article.education,
+  main div.container a.tab-title-organization:hover ~ article.organization,
+  main div.container a.tab-title-portfolio:hover ~ article.portfolio,
+  main div.container a.tab-title-contact:hover ~ article.contact,
+  main div.container article:hover {
+    z-index: 999;
+    height: 180px;
+  }
+  main div.container article {
+    position: absolute;
+    height: 0px;
+    width: 250px;
+    overflow: hidden;
+    transition: height 2.5s ease;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 5px 5px 5px #999;
+    background-color: #fff;
+    border: 2px solid #55f;
+  }
+  main div.container article div.details {
+    margin: 10px 15px;
+    text-align: justify;
+    overflow: auto;
+    max-height: 180px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+  }
+  main div.container article div.details p {
+    font-size: 12px;
+  }
+  main div.container article div.details h3 {
+    font-size: 16px;
+  }
+  main div.container article div.details h5 {
+    font-size: 14px;
+  }
+  main div.container article div.details h6 {
+    font-size: 13px;
+  }
+  main div.container article.about {
+    top: -45px;
+    left: 100px;
+  }
+  main div.container article.experience {
+    top: -45px;
+    left: 100px;
+  }
+  main div.container article.education {
+    top: -45px;
+    left: 100px;
+  }
+  main div.container article.organization {
+    top: -45px;
+    left: 100px;
+  }
+  main div.container article.portfolio {
+    top: -45px;
+    left: 100px;
+  }
+  main div.container article.contact {
+    top: -45px;
+    left: 100px;
+  }
+  main div.container article.portfolio div.details {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+  }
+  main div.container article.portfolio div.details a.link-github {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    display: block;
+    width: 90%;
+  }
+  main div.container article.portfolio div.details a.link-github svg {
+    transform: scale(0.85);
+  }
+  main div.container article.contact div.details form div.form-control {
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+    margin-bottom: 10px;
+  }
+  main div.container article.contact div.details form div.form-control label {
+    font-size: 14px;
+  }
+  main div.container article.contact div.details form div.form-control input,
+  main div.container article.contact div.details form div.form-control select,
+  main
+    div.container
+    article.contact
+    div.details
+    form
+    div.form-control
+    textarea {
+    padding: 2.5px 5px;
+    font-size: 11px;
+  }
+  main div.container article.contact div.details form button {
+    position: relative;
+    padding: 2.5px 5px;
+    font-weight: 600;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px;
+    font-size: 11px;
+  }
+
+  footer {
+    height: 30px;
+  }
+  footer p {
+    position: absolute;
+    font-size: 12px;
+    top: -13px;
+  }
+}
+@media screen and (max-width: 768px) {
+  div.container {
+    width: 80vw;
+  }
+  header div.container div.header-details {
+    border: 2px solid;
+    box-shadow: 5px 5px 5px #55f;
+  }
+  header div.container div.header-details p {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+  }
+  header div.container div.header-logo img {
+    border: 2px solid #55f;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    width: 200px;
+    height: 200px;
+    box-shadow: 5px 5px 5px #55f;
+  }
+  header div.container div.header-details div.header-icon {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+  header div.container div.header-details div.header-icon a:hover svg {
+    transform: scale(1.25);
+  }
+  header div.container div.header-details div.header-icon a span.icon-details {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    font-size: 16px;
+    width: 200px;
+  }
+
+  main div.container a {
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 5px 0 5px 10px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+    min-width: 120px;
+  }
+  main div.container a.tab-title-about {
+    top: -55px;
+    background-color: #000;
+  }
+  main div.container a.tab-title-experience {
+    top: -20px;
+    left: 0px;
+    background-color: #000;
+  }
+  main div.container a.tab-title-education {
+    top: 15px;
+    left: 0px;
+    background-color: #000;
+  }
+  main div.container a.tab-title-organization {
+    top: 50px;
+    left: 0px;
+    background-color: #000;
+  }
+  main div.container a.tab-title-portfolio {
+    top: 85px;
+    left: 0px;
+    background-color: #000;
+  }
+  main div.container a.tab-title-contact {
+    top: 120px;
+    left: 0px;
+    background-color: #000;
+  }
+  main div.container > a:hover {
+    background-color: #55f;
+    color: #fff;
+  }
+  main div.container a.tab-title-about:hover ~ article.about,
+  main div.container a.tab-title-experience:hover ~ article.experience,
+  main div.container a.tab-title-education:hover ~ article.education,
+  main div.container a.tab-title-organization:hover ~ article.organization,
+  main div.container a.tab-title-portfolio:hover ~ article.portfolio,
+  main div.container a.tab-title-contact:hover ~ article.contact,
+  main div.container article:hover {
+    z-index: 999;
+    height: 205px;
+  }
+  main div.container article {
+    position: absolute;
+    height: 0px;
+    width: 410px;
+    overflow: hidden;
+    transition: height 2.5s ease;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 5px 5px 5px #999;
+    background-color: #fff;
+    border: 2px solid #55f;
+  }
+  main div.container article div.details {
+    margin: 10px 15px;
+    text-align: justify;
+    overflow: auto;
+    max-height: 205px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+  }
+  main div.container article div.details p {
+    font-size: 14px;
+  }
+  main div.container article div.details h3 {
+    font-size: 18px;
+  }
+  main div.container article div.details h5 {
+    font-size: 16px;
+  }
+  main div.container article div.details h6 {
+    font-size: 15px;
+  }
+  main div.container article.about {
+    top: -55px;
+    left: 120px;
+  }
+  main div.container article.experience {
+    top: -55px;
+    left: 120px;
+  }
+  main div.container article.education {
+    top: -55px;
+    left: 120px;
+  }
+  main div.container article.organization {
+    top: -55px;
+    left: 120px;
+  }
+  main div.container article.portfolio {
+    top: -55px;
+    left: 120px;
+  }
+  main div.container article.contact {
+    top: -55px;
+    left: 120px;
+  }
+  main div.container article.portfolio div.details {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+  }
+  main div.container article.portfolio div.details a.link-github {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    display: block;
+    width: 90%;
+  }
+  main div.container article.portfolio div.details a.link-github svg {
+    transform: scale(0.85);
+  }
+  main div.container article.contact div.details form div.form-control {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 15px;
+  }
+  main div.container article.contact div.details form div.form-control label {
+    font-size: 16px;
+  }
+  main div.container article.contact div.details form div.form-control input,
+  main div.container article.contact div.details form div.form-control select,
+  main
+    div.container
+    article.contact
+    div.details
+    form
+    div.form-control
+    textarea {
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+  main div.container article.contact div.details form button {
+    position: relative;
+    padding: 5px 10px;
+    font-weight: 600;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px;
+    font-size: 13px;
+  }
+
+  footer {
+    height: 40px;
+  }
+  footer p {
+    position: absolute;
+    font-size: 14px;
+    top: -10px;
+  }
+}
